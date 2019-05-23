@@ -68,35 +68,9 @@ export const GenTitle = styled.h2`
   justify-self: center;
 `;
 
-export const Class = styled.h3`
-  grid-area: cl;
+export const Info = styled.h3`
   justify-self: center;
   align-self: center;
-`;
-
-export const Background = styled.h3`
-  grid-area: bk;
-  justify-self: center;
-`;
-
-export const Race = styled.h3`
-  grid-area: rl;
-  justify-self: center;
-`;
-
-export const Level = styled.h3`
-  grid-area: lv;
-  justify-self: center;
-`;
-
-export const Alignment = styled.h3`
-  grid-area: ag;
-  justify-self: center;
-`;
-
-export const Exp = styled.h3`
-  grid-area: ex;
-  justify-self: center;
 `;
 
 export const CharacterImg = styled.img`
