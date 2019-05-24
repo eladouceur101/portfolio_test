@@ -22,7 +22,7 @@ const characterSheetGrid = styled.div`
     '171 172 173';
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows:
-    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     1fr 1fr 1fr 1fr;
   background: #f6e6cc;
   border-style: solid;
@@ -59,6 +59,7 @@ export const GenGrid = styled.div`
   border-color: #0f4737;
   border-width: 2px;
   border-radius: 10px;
+  margin: 1%;
 `;
 
 export const GenTitle = styled.h2`
@@ -66,6 +67,7 @@ export const GenTitle = styled.h2`
   text-decoration: underline;
   text-decoration-color: #0f4737;
   justify-self: center;
+  align-self: center;
 `;
 
 export const Info = styled.h3`
@@ -89,17 +91,102 @@ export const StatGrid = styled.div`
   display: grid;
   grid-area: ss;
   grid-template-areas:
-    'stat sthrow'
-    'str strsave'
-    'dex dexsave'
-    'con consave'
-    'int intsave'
-    'wis wissave'
-    'chr chrsave';
+    'stat skill sname'
+    'str str str'
+    'dex dex dex'
+    'con con con'
+    'int int int'
+    'wis wis wis'
+    'chr chr chr';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border-style: solid;
+  border-color: #0f4737;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 1%;
 `;
 
 export const StatHeader = styled.h2`
+  color: #0f4737;
   text-decoration: underline;
+  text-decoration-color: #0f4737;
+  justify-self: center;
+  border-style: solid;
+  border-color: #0f4737;
+  border-width: 2px;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  text-align: center;
+`;
+
+export const SkillGrid = styled.div`
+  display: grid;
+  grid-template-areas:
+    'stat pro1 sm1 name1'
+    'stat pro2 sm2 name2'
+    'stat pro3 sm3 name3'
+    'stat pro4 sm4 name4'
+    'mod pro5 sm5 name5'
+    'mod pro6 sm6 name6';
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border-style: solid;
+  border-color: #0f4737;
+  border-width: 2px;
+`;
+
+export const Block = styled.div`
+  color: #5c3854;
+  border-style: solid;
+  border-color: #0f4737;
+  border-width: 2px;
+`;
+
+export const Stat = styled.h1`
+  color: #5c3854;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  height: 50%;
+  margin-top: 25%;
+  margin-bottom: 25%;
+`;
+
+export const Mod = styled.h2`
+  color: #5c3854;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+`;
+
+export const SkillMod = styled.h4`
+  color: #5c3854;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  height: 80%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+`;
+
+export const SkillName = styled.p`
+  color: #5c3854;
+  text-align: center;
+  margin: 0;
+`;
+
+export const NullSpace = styled.p`
+  color: #050505;
+  text-align: center;
+  margin: 0;
+`;
+
+export const Pro = styled.svg`
+  height: 15%;
+  width: 15%;
+  position: absolute;
 `;
 
 export default characterSheetGrid;
